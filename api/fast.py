@@ -17,6 +17,7 @@ app.add_middleware(
 def root():
     response = {
         'greeting': 'Bonjour!!',    # This is a typical French greeting ;)
+        'timestamp': datetime.now() 
     }
 
     return response
